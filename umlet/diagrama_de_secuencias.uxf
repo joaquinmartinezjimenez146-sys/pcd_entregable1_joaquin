@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>132</x>
+      <y>77</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>c: Comandante</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>77</y>
+      <w>154</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:Gestor del almacen_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>748</x>
+      <y>77</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:Almacen_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>165</x>
+      <y>99</y>
+      <w>44</w>
+      <h>682</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;600.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>99</y>
+      <w>33</w>
+      <h>671</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;590.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>99</y>
+      <w>33</w>
+      <h>682</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;600.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>143</y>
+      <w>297</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>solicita un repuesto
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>385</y>
+      <w>242</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>actualiza stock
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;200.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLGeneric</id>
+    <coordinates>
+      <x>946</x>
+      <y>77</y>
+      <w>110</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>_:Repuesto_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1001</x>
+      <y>99</y>
+      <w>33</w>
+      <h>682</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;600.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>165</x>
+      <y>539</y>
+      <w>308</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>adquiere repuesto
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;260.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>451</y>
+      <w>385</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>recibe el repuesto
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;330.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>275</y>
+      <w>385</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>comprueba stock
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>330.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>792</x>
+      <y>308</y>
+      <w>242</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>extraer repuesto
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>200.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>253</y>
+      <w>297</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>detalla repuesto
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>250.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>176</x>
+      <y>198</y>
+      <w>297</w>
+      <h>55</h>
+    </coordinates>
+    <panel_attributes>solicita detalles del repuesto
+lt=&lt;&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;250.0;20.0</additional_attributes>
+  </element>
+</diagram>
