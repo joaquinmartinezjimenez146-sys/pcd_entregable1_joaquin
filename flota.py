@@ -58,6 +58,17 @@ class CazaEstelar(Nave, UnidadCombate): # la clase CazaEstelar hereda de Nave y 
         print(f"ID Combate: {self.id_combate}")
         print(f"Dotación: {self.dotacion}")
 
+class NaveEstelar(Nave, UnidadCombate): # la clase NaveEstelar hereda de Nave y UnidadCombate, y tiene atributos adicionales como tripulación, pasaje y tipo
+    def __init__(self, nombre: str, catalogo: list, tripulacion: int, pasaje: int, tipo: ClaseNave, id_combate: str, clave: int):
+        Nave.__init__(self, nombre, catalogo)
+        UnidadCombate.__init__(self, id_combate, clave)
+        self.tripulacion = tripulacion
+        self.pasaje = pasaje
+        self.tipo = tipo
+
+    def mostrar_info(self): # implementamos el método mostrar_info para la clase NaveEstelar, que imprime en pantalla los atributos de la nave estelar
+        print(f"Nave Estelar: {self.nombre} | Clase: {self.tipo.value} | ID: {self.id_combate}")
+
 class Repuesto: # la clase Repuesto representa una pieza de repuesto para las naves espaciales, con atributos como nombre, proveedor, cantidad y precio
     def __init__(self, nombre:str, proveedor:str, cantidad:int, precio:float):
         self.nombre = nombre
@@ -75,6 +86,15 @@ class Repuesto: # la clase Repuesto representa una pieza de repuesto para las na
         self.__cantidad -= unidades
         return True
     
+class Almacen: # la clase Almacen representa un lugar donde se almacenan los repuestos, con atributos como nombre, localización y un catálogo de piezas
+    def __init__(self, nombre: str, localizacion: str):
+        self.nombre = nombre
+        self.localizacion = localizacion
+        self.catalogo_piezas = [] # Lista de objetos Repuesto
+
+    def anadir_repuesto(self, repuesto: Repuesto): # método para añadir un repuesto al catálogo de piezas del almacén
+        self.catalogo_piezas.append(repuesto)
+
 # codigo de prueba
 if __name__ == "__main__":
     print("--- INICIANDO SISTEMA MILIMPERIO ---")
